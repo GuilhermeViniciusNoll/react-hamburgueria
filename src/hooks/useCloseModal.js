@@ -1,4 +1,3 @@
-
 export function useClosedModal(event, keyID, refButton, refModal) {
 
     if (keyID === null) {

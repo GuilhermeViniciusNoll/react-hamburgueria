@@ -1,7 +1,10 @@
+import { toast } from "react-toastify";
+import { ButtonStyled } from "../../../styles/buttonStyle.js"
+import { StyledLi } from "./style.js"
 
 export function ProductCart({ item, setShoppingCart, shoppingCart }) {
 
-    const value = item.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+    const value = item.price.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
     const addCart = () => {
         const productRepeated = shoppingCart.find((element) => element.id == item.id)
@@ -13,17 +16,24 @@ export function ProductCart({ item, setShoppingCart, shoppingCart }) {
             item.amount = item.amount + 1
             setShoppingCart([...newList, item])
         }
+        toast(`😋 Pedido adicionado!`, {
+            autoClose: 1000,
+            hideProgressBar: true,
+            pauseOnHover: false,
+        });
     }
 
     return (
-        <li key={item.id}>
-            <img src={item.img} alt="imagem lanche" />
-            <div>
+        <StyledLi key={item.id}>
+            <div className="firstDiv">
+                <img src={item.img} alt="imagem lanche" />
+            </div>
+            <div className="secondDiv">
                 <h2>{item.name}</h2>
                 <p>{item.category}</p>
                 <span>{value}</span>
-                <button onClick={addCart}>Adicionar</button>
+                <ButtonStyled model="medium" onClick={addCart}>Adicionar</ButtonStyled>
             </div>
-        </li >
+        </StyledLi >
     )
 }

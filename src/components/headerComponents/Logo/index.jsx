@@ -1,7 +1,8 @@
+import { StyledH1 } from "./style.js"
 
 export function Logo() {
 
     return (
-        <h1>Burguer<span>Kenzie</span></h1>
+        <StyledH1>Burguer<span>Kenzie</span></StyledH1>
     )
 }
