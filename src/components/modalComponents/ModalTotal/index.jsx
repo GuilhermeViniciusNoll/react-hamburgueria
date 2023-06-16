@@ -1,10 +1,10 @@
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"
 import { StyledDiv } from "./style.js"
 import { ButtonStyled } from "../../../styles/buttonStyle.js"
 
 export function ModalTotal({ setShoppingCart, shoppingCart }) {
 
-    let value = shoppingCart.reduce((acc, element) => acc + (element.price * element.amount), 0);
+    let value = shoppingCart.reduce((acc, element) => acc + (element.price * element.amount), 0)
     value = value.toLocaleString("pt-br", { style: "currency", currency: "BRL" })
 
     const deleteAllProducts = () => {
@@ -14,7 +14,7 @@ export function ModalTotal({ setShoppingCart, shoppingCart }) {
                 autoClose: 1000,
                 hideProgressBar: true,
                 pauseOnHover: false,
-            });
+            })
         }
     }
 

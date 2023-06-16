@@ -1,5 +1,5 @@
 import trash from "../../../assets/trash.png"
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"
 import { StyledLi } from "./style.js"
 
 export function ModalProduct({ element, shoppingCart, setShoppingCart }) {
@@ -11,7 +11,7 @@ export function ModalProduct({ element, shoppingCart, setShoppingCart }) {
             autoClose: 1000,
             hideProgressBar: true,
             pauseOnHover: false,
-        });
+        })
     }
 
     return (

@@ -1,4 +1,4 @@
-import { ModalProduct } from "../ModalProduct/index.jsx";
+import { ModalProduct } from "../ModalProduct/index.jsx"
 import { StyledUlModal } from "./style.js"
 
 export function ModalList({ setShoppingCart, shoppingCart }) {

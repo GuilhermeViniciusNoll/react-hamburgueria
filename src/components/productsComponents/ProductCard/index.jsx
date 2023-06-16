@@ -1,10 +1,10 @@
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"
 import { ButtonStyled } from "../../../styles/buttonStyle.js"
 import { StyledLi } from "./style.js"
 
 export function ProductCart({ item, setShoppingCart, shoppingCart }) {
 
-    const value = item.price.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+    const value = item.price.toLocaleString("pt-br", { style: "currency", currency: "BRL" })
 
     const addCart = () => {
         const productRepeated = shoppingCart.find((element) => element.id == item.id)
@@ -20,7 +20,7 @@ export function ProductCart({ item, setShoppingCart, shoppingCart }) {
             autoClose: 1000,
             hideProgressBar: true,
             pauseOnHover: false,
-        });
+        })
     }
 
     return (

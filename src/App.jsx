@@ -3,8 +3,8 @@ import { Header } from "./components/headerComponents/Header/index.jsx"
 import { ProductList } from "./components/productsComponents/ProductList/index.jsx"
 import { api } from "../src/services/api.js"
 import { Modal } from "./components/modalComponents/Modal/index.jsx"
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import { GlobalStyle } from "./styles/globalStyle.js"
 import { ResetStyle } from "./styles/resetStyle.js"
 

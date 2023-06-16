@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
-import { ModalHeader } from "../ModalHeader/index.jsx";
-import { ModalList } from "../ModalList/index.jsx";
-import { ModalTotal } from "../ModalTotal/index.jsx";
+import { useEffect, useRef } from "react"
+import { ModalHeader } from "../ModalHeader/index.jsx"
+import { ModalList } from "../ModalList/index.jsx"
+import { ModalTotal } from "../ModalTotal/index.jsx"
 import { useClosedModal } from "../../../hooks/useCloseModal.js"
 import { StyledDiv } from "./style.js"
 
